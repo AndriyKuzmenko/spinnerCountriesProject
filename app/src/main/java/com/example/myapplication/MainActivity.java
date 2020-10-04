@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","North America", "Oceania","South America"};
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal"},
@@ -31,12 +31,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         continetsSpinner=(Spinner)findViewById(R.id.continentsSpinner);
         countriesListView=(ListView)findViewById(R.id.countriesListView);
 
+        continetsSpinner.setOnItemSelectedListener(this);
+
         ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, continents);
         continetsSpinner.setAdapter(adp);
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+    {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent)
     {
 
     }
