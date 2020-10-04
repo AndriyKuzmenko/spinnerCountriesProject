@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdapterView.onItemClickListener
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. Africa"},
@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"Albania","Belgium","Finland","France","Germany","Norway","Spain","United Kingdom"},
                           {"Anguila","Belize","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
                           {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands","Samoa"},
-                          {"Argentina","Bolivia","Brazil","Chile","Peru","Uruguay","Falkland Islands","French Guiana"}};
+                          {"Argentina","Bolivia","Brazil","Chile","Falkland Islands","French Guiana","Peru","Uruguay"}};
+    String[][] capitals={{}};
 
     Spinner continetsSpinner;
-
     ListView countriesListView;
     TextView capitalTV, populationTV, languageTV, anthemTV;
 
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         continetsSpinner.setOnItemSelectedListener(this);
         countriesListView.setOnItemClickListener(this);
+        countriesListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,continents);
         continetsSpinner.setAdapter(adp);
@@ -52,82 +53,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
     {
-
+        capitalTV.setText(capitals[continent][position]);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
     {
-        if (parent.getId()==continetsSpinner.getId())
-        {
-            if (position==0) return;
-            ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, countries[position-1]);
-            countriesListView.setAdapter(adp);
-            continent=position;
-        }
-        else
-        {
-            switch (continent)
-            {
-                case 1:
-                    checkAfrica(position);
-                    break;
-                case 2:
-                    checkAsia(position);
-                    break;
-                case 3:
-                    checkEurope(position);
-                    break;
-                case 4:
-                    checkNorthAmerica(position);
-                    break;
-                case 5:
-                    checkOceania(position);
-                    break;
-                case 6:
-                    checkSouthAmerica(position);
-                    break;
-            }
-        }
+        if (position==0) return;
+        ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, countries[position-1]);
+        countriesListView.setAdapter(adp);
+        continent=position-1;
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent)
-    {
-
-    }
-
-    public void checkAfrica(int position)
-    {
-        switch(position)
-        {
-            case 0:
-                capitalTV.setText("Capital: Luanda");
-                break;
-        }
-    }
-
-    public void checkAsia(int position)
-    {
-
-    }
-
-    public void checkEurope(int position)
-    {
-
-    }
-
-    public void checkNorthAmerica(int position)
-    {
-
-    }
-
-    public void checkOceania(int position)
-    {
-
-    }
-
-    public void checkSouthAmerica(int position)
     {
 
     }
