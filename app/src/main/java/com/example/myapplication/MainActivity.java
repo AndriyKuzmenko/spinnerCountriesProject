@@ -3,10 +3,13 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","North America", "Oceania","South America"};
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal"},
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity
                           {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands"}};
 
     Spinner continetsSpinner;
+    ListView countriesListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,8 +29,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         continetsSpinner=(Spinner)findViewById(R.id.continentsSpinner);
+        countriesListView=(ListView)findViewById(R.id.countriesListView);
 
-        ArrayAdapter<String> adpSpinner=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, continents);
-        continetsSpinner.setAdapter(adpSpinner);
+        ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, continents);
+        continetsSpinner.setAdapter(adp);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+    {
+
     }
 }
