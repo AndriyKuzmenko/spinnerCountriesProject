@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     String[][] capitals={{"Luanda","Gaborone","Yaounde","Cairo","Asmara","Monrovia","Dakar","Cape Town"},
                          {"Hong Kong","Jerusalem","Tokyo","Kathmandu","Singapore","Colombo","Seoul","Taipei"},
                          {"Tirana","Brussles","Helsinki","Paris","Berlin","Oslo","Madrid","London"},
-                         {"The Valley","Belize City","Hamilton","Ottawa","George Town","Nuuk","Marigot","Washington D.C."}};
+                         {"The Valley","Belize City","Hamilton","Ottawa","George Town","Nuuk","Marigot","Washington D.C."},
+                         {"Canberra","Papeete","Hagatna","Majuro","Noumea","Wellington","Adamstown","Apia"},
+                         {"Buenos Aires","Sucre","Brasilia","Santiago","Port Stanley","Cayenne","Lima","Montevideo"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
