@@ -12,12 +12,12 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
-    String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal"},
-                          {"Hong Kong","Israel","Japan","Singapore","Sri Lanka","S. Korea","Taiwan"},
-                          {"Albania","Belgium","Finland","France","Norway","Spain","United Kingdom"},
-                          {"Anguila","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
-                          {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands"},
-                          {"Argentina","Brazil","Chile","Peru","Uruguay","Falkland Islands","French Guiana"}};
+    String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. AFrica"},
+                          {"Hong Kong","Israel","Japan","Nepal","Singapore","Sri Lanka","S. Korea","Taiwan"},
+                          {"Albania","Belgium","Finland","France","Germany","Norway","Spain","United Kingdom"},
+                          {"Anguila","Belize","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
+                          {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands","Samoa"},
+                          {"Argentina","Bolivia","Brazil","Chile","Peru","Uruguay","Falkland Islands","French Guiana"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
