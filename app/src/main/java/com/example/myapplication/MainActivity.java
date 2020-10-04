@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"Anguila","Belize","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
                           {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands","Samoa"},
                           {"Argentina","Bolivia","Brazil","Chile","Falkland Islands","French Guiana","Peru","Uruguay"}};
-    String[][] capitals={{}};
+    String[][] capitals={{"Luanda","Gaborone","Yaounde","Cairo","Asmara","Monrovia","Dakar","Cape Town"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
     {
-        capitalTV.setText(capitals[continent][position]);
+        capitalTV.setText("Capital: "+capitals[continent][position]);
     }
 
     @Override
