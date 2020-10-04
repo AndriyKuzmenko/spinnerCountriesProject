@@ -9,6 +9,13 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","North America", "Oceania","South America"};
+    String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal"},
+                          {"Armenia","Georgia","Hong Kong","Israel","Japan","Singapore","Taiwan"},
+                          {"Albania","Belgium","Finland","France","Norway","Spain","United Kingdom"},
+                          {"Anguila","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
+                          {"Argentina","Brazil","Chile","Peru","Uruguay","Falkland Islands","French Guiana"},
+                          {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands"}};
+
     Spinner continetsSpinner;
 
     @Override
