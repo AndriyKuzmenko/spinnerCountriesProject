@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"Anguila","Belize","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
                           {"Australia","French Polynesia","Guam","Marshall Islands","New Caledonia","New Zealand","Pitcairn Islands","Samoa"},
                           {"Argentina","Bolivia","Brazil","Chile","Falkland Islands","French Guiana","Peru","Uruguay"}};
-    String[][] capitals={{"Luanda","Gaborone","Yaounde","Cairo","Asmara","Monrovia","Dakar","Cape Town"}};
+    String[][] capitals={{"Luanda","Gaborone","Yaounde","Cairo","Asmara","Monrovia","Dakar","Cape Town"},
+                         {"Hong Kong","Jerusalem","Tokyo","Kathmandu","Singapore","Colombo","Seoul","Taipei"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
