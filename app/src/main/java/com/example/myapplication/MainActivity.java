@@ -8,11 +8,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
-    String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. AFrica"},
+    String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. Africa"},
                           {"Hong Kong","Israel","Japan","Nepal","Singapore","Sri Lanka","S. Korea","Taiwan"},
                           {"Albania","Belgium","Finland","France","Germany","Norway","Spain","United Kingdom"},
                           {"Anguila","Belize","Bermuda","Canada","Cayman Islands","Greenland","St. Martin","United States"},
@@ -21,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     Spinner continetsSpinner;
     ListView countriesListView;
+    TextView capitalTV, populationTV, languageTV, anthemTV;
+
     int continent;
 
     @Override
@@ -31,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         continetsSpinner=(Spinner)findViewById(R.id.continentsSpinner);
         countriesListView=(ListView)findViewById(R.id.countriesListView);
+        capitalTV=(TextView)findViewById(R.id.capitalTV);
+        populationTV=(TextView)findViewById(R.id.populationTV);
+        languageTV=(TextView)findViewById(R.id.languageTV);
+        anthemTV=(TextView)findViewById(R.id.anthemTV);
 
         continetsSpinner.setOnItemSelectedListener(this);
 
@@ -82,7 +91,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void checkAfrica(int position)
     {
-
+        switch(position)
+        {
+            case 0:
+                capitalTV.setText("Capital: Luanda");
+                break;
+        }
     }
 
     public void checkAsia(int position)

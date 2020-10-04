@@ -59,13 +59,14 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="10" />
+            android:layout_weight="7" />
 
         <TextView
+            android:id="@+id/capitalTV"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Capital:" />
 
         <Space
             android:layout_width="match_parent"
@@ -73,10 +74,11 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/populationTV"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Population:" />
 
         <Space
             android:layout_width="match_parent"
@@ -84,10 +86,11 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/languageTV"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Language:" />
 
         <Space
             android:layout_width="match_parent"
@@ -95,10 +98,11 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/anthemTV"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Anthem:" />
 
         <Space
             android:layout_width="match_parent"
