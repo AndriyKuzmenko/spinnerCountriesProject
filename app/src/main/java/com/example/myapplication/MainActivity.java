@@ -15,6 +15,7 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
+
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. Africa"},
                           {"Hong Kong","Israel","Japan","Nepal","Singapore","Sri Lanka","S. Korea","Taiwan"},
                           {"Albania","Belgium","Finland","France","Germany","Norway","Spain","United Kingdom"},
