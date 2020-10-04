@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     Spinner continetsSpinner;
     ListView countriesListView;
+    int continent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,15 +46,66 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             if (position==0) return;
             ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, countries[position-1]);
             countriesListView.setAdapter(adp);
+            continent=position;
         }
         else
         {
-
+            switch (continent)
+            {
+                case 1:
+                    checkAfrica(position);
+                    break;
+                case 2:
+                    checkAsia(position);
+                    break;
+                case 3:
+                    checkEurope(position);
+                    break;
+                case 4:
+                    checkNorthAmerica(position);
+                    break;
+                case 5:
+                    checkOceania(position);
+                    break;
+                case 6:
+                    checkSouthAmerica(position);
+                    break;
+            }
         }
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent)
+    {
+
+    }
+
+    public void checkAfrica(int position)
+    {
+
+    }
+
+    public void checkAsia(int position)
+    {
+
+    }
+
+    public void checkEurope(int position)
+    {
+
+    }
+
+    public void checkNorthAmerica(int position)
+    {
+
+    }
+
+    public void checkOceania(int position)
+    {
+
+    }
+
+    public void checkSouthAmerica(int position)
     {
 
     }
