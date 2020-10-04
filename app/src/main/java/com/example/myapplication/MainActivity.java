@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdapterView.onItemClickListener
 {
     String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. Africa"},
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"Argentina","Bolivia","Brazil","Chile","Peru","Uruguay","Falkland Islands","French Guiana"}};
 
     Spinner continetsSpinner;
+
     ListView countriesListView;
     TextView capitalTV, populationTV, languageTV, anthemTV;
 
@@ -42,9 +43,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         anthemTV=(TextView)findViewById(R.id.anthemTV);
 
         continetsSpinner.setOnItemSelectedListener(this);
+        countriesListView.setOnItemClickListener(this);
 
-        ArrayAdapter<String> adp=new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, continents);
+        ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,continents);
         continetsSpinner.setAdapter(adp);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+    {
+
     }
 
     @Override
