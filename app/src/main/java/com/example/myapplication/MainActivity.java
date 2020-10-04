@@ -11,7 +11,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
-    String[] continents={"-Continent-","Africa","Asia","Europe","North America", "Oceania","South America"};
+    String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal"},
                           {"Armenia","Georgia","Hong Kong","Israel","Japan","Singapore","Taiwan"},
                           {"Albania","Belgium","Finland","France","Norway","Spain","United Kingdom"},
