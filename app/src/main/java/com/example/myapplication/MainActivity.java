@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     String[][] languages={{"Portugese","English","French, English","Arabic","Tigrinya","English","French","English, Afrikaans"},
                           {"Cantonese, English","Hebrew","Japanese","Nepali","English","Sinhala, Tamil","Korean","Chinese"},
-                          {"Albanian","Dutch, French, German","Finnish","French","German","Norwegian","Spanish","English"}};
+                          {"Albanian","Dutch, French, German","Finnish","French","German","Norwegian","Spanish","English"},
+                          {"English","English","English","English, French","English","Greenlandic","French","English"},
+                          {"English","French","English","English","French","English","English, Pitkern","Samoan, English"},
+                          {"Spanish","Spanish","Portuguese","Spanish","English","French","Spanish","Spanish"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
