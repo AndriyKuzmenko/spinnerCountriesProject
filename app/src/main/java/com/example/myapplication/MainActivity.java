@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                          {"Canberra","Papeete","Hagatna","Majuro","Noumea","Wellington","Adamstown","Apia"},
                          {"Buenos Aires","Sucre","Brasilia","Santiago","Port Stanley","Cayenne","Lima","Montevideo"}};
 
+    String[][] populations={{}};
+
     Spinner continetsSpinner;
     ListView countriesListView;
     TextView capitalTV, populationTV, languageTV, anthemTV;
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
     {
         capitalTV.setText("Capital: "+capitals[continent][position]);
+        populationTV.setText("Population: "+populations[continent][position]);
     }
 
     @Override
