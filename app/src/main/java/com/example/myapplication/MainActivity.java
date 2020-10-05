@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener
 {
-    String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"};
+    String[] continents={"-Continent-","Africa","Asia","Europe","N. America", "Oceania","S. America"}; //N.=North    S.=South
 
     String[][] countries={{"Angola","Botswana","Cameroon","Egypt","Eritrea","Liberia","Senegal","S. Africa"},
                           {"Hong Kong","Israel","Japan","Nepal","Singapore","Sri Lanka","S. Korea","Taiwan"},
@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                          {"Canberra","Papeete","Hagatna","Majuro","Noumea","Wellington","Adamstown","Apia"},
                          {"Buenos Aires","Sucre","Brasilia","Santiago","Port Stanley","Cayenne","Lima","Montevideo"}};
 
-    String[][] populations={{}};
+    String[][] populations={{"31,127,674","2,254,068","16,545,864","100,075,480","6,081,196","5,073,296","15,854,323","59,622,350"},
+                            {"7,500,700","9,258,200","125,960,000","28,095,714","5,703,600","21,803,000","51,709,098","23,780,452"},
+                            {"2,845,955","11,492,641","5,528,737","67,081,00","83,166,711","5,432,580","47,431,256","67,886,004"},
+                            {"14,731","408,487","71,176","38,005,238","65,813","56,081","35,334","328,239,523"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
