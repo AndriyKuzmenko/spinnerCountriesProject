@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             {"44,938,712","11,428,245","210,147,125","17,574,003","3,398","290,691","32,824,358","3,518,552"}};
 
     String[][] languages={{"Portugese","English","French, English","Arabic","Tigrinya","English","French","English, Afrikaans"},
-                          {"Cantonese, English","Hebrew","Japanese","Nepali","English","Sinhala, Tamil","Korean","Chinese"}};
+                          {"Cantonese, English","Hebrew","Japanese","Nepali","English","Sinhala, Tamil","Korean","Chinese"},
+                          {"Albanian","Dutch, French, German","Finnish","French","German","Norwegian","Spanish","English"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
