@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     String[][] anthems={{"Angola Avante","Blessed Be Our Noble Land","Oh Cameroon, Cradle of our Forefathers","Biladi, Biladi, Biladi","Eritrea, Eritrea, Eritrea","All Hail, Liberia, Hail!","Everyone strum your karos, strike the balafons","National Anthem of South Africa"},
                         {"Glory to Hong Kong","Hatikvah","His Imperial Majesty's Reign","Made of Hundreds of Flowers","Onward, Singapore","Mother Sri Lanka","Hongik Ingan","Natinal Anthem of the Republic of China"},
                         {"Hymn to the Flag","Unity makes strength","Our Land","La Marseillaise","Song of Germany","Yes, we love this country","Marcha Real","God Save the Queen"},
-                        {"God Bless Anguilla","Land of the Free","Hail to Bermuda","O Canada","Beloved Isle Cayman","You Our Ancient Land","O Sweet Saint Martin","The Star-Spangled Banner"}};
+                        {"God Bless Anguilla","Land of the Free","Hail to Bermuda","O Canada","Beloved Isle Cayman","You Our Ancient Land","O Sweet Saint Martin","The Star-Spangled Banner"},
+                        {"Advance Australia Fair","Great Tahiti of the Golden Haze","Stand Ye Guamanians","Forever Marshall Islands","Soyons unis, devenons freres","God Defend New Zealand","Come Ye Blessed","The Banner of Freedom"},
+                        {"Argentine National Anthem","Himno Nacional de Bolivia","Brazilian National Anthem","By Right or Might","Song of the Falkalnds","La Marseillaise","National Anthm of Peru","National Anthem of Uruguay"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
