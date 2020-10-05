@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"English","French","English","English","French","English","English, Pitkern","Samoan, English"},
                           {"Spanish","Spanish","Portuguese","Spanish","English","French","Spanish","Spanish"}};
 
-    String[][] anthems={{}};
+    String[][] anthems={{"Angola Avante","Blessed Be Our Noble Land","Oh Cameroon, Cradle of our Forefathers","Biladi, Biladi, Biladi","Eritrea, Eritrea, Eritrea","All Hail, Liberia, Hail!","Everyone strum your karos, strike the balafons","National Anthem of South Africa"}};
 
     Spinner continetsSpinner;
     ListView countriesListView;
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             languageTV.setText("Language: " + languages[continent][position]);
         }
 
-        anthemTV.setText(anthems[continent][position]);
+        anthemTV.setText("Anthem: "+anthems[continent][position]);
     }
 
     @Override
