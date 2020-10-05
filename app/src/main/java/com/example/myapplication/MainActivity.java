@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     String[][] anthems={{"Angola Avante","Blessed Be Our Noble Land","Oh Cameroon, Cradle of our Forefathers","Biladi, Biladi, Biladi","Eritrea, Eritrea, Eritrea","All Hail, Liberia, Hail!","Everyone strum your karos, strike the balafons","National Anthem of South Africa"},
                         {"Glory to Hong Kong","Hatikvah","His Imperial Majesty's Reign","Made of Hundreds of Flowers","Onward, Singapore","Mother Sri Lanka","Hongik Ingan","Natinal Anthem of the Republic of China"},
+                        {"Hymn to the Flag","Unity makes strength","Our Land","La Marseillaise","Song of Germany","Yes, we love this country","Marcha Real","God Save the Queen"},
                         {""}};
 
     Spinner continetsSpinner;
