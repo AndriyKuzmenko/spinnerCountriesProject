@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             {"25,673,600","275,918","168,485","58,413","271,407","5,092,100","50","195,843"},
                             {"44,938,712","11,428,245","210,147,125","17,574,003","3,398","290,691","32,824,358","3,518,552"}};
 
+    String[][] languages={{}};
+
     Spinner continetsSpinner;
     ListView countriesListView;
     TextView capitalTV, populationTV, languageTV, anthemTV;
@@ -69,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     {
         capitalTV.setText("Capital: "+capitals[continent][position]);
         populationTV.setText("Population: "+populations[continent][position]);
+        languageTV.setText("Population: "+languages[continent][position]);
     }
 
     @Override
