@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                           {"English","French","English","English","French","English","English, Pitkern","Samoan, English"},
                           {"Spanish","Spanish","Portuguese","Spanish","English","French","Spanish","Spanish"}};
 
+    String[][] anthems={{}};
+
     Spinner continetsSpinner;
     ListView countriesListView;
     TextView capitalTV, populationTV, languageTV, anthemTV;
@@ -85,6 +87,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         {
             languageTV.setText("Language: " + languages[continent][position]);
         }
+
+        anthemTV.setText(anthems[continent][position]);
     }
 
     @Override
